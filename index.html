@@ -1,16 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <title>BasketBall Score Sheet</title>
         <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <h2>0</h2>
+        <div class="mainclass">
+            <div class="mainheading">
+                <h1>BasketBall Score Sheet</h1>
             </div>
-            <div>
-                <h3>GUEST</h3>
-            </div>
+            <div class="mainclass2">
+                    <div class="supercontainer">
+                        <div class="container">
+                            <div class="subClass">
+                                <h3>HOME</h3>
+                                <h2 id="hscore">0</h2>
+                                <div class="master-btn">
+                                    <button onclick="addHS1()" class="save-btn">+ 1</button>
+                                    <button onclick="addHS2()" class="save-btn">+ 2</button>
+                                    <button onclick="addHS3()" class="save-btn">+ 3</button>
+                                </div>
+                            </div>
+                            <div class="subClass">
+                                <h3>GUEST</h3>
+                                <h2 id="gscore">0</h2>
+                                <div class="master-btn">
+                                    <button onclick="addGS1()" class="save-btn">+ 1</button>
+                                    <button onclick="addGS2()" class="save-btn">+ 2</button>
+                                    <button onclick="addGS3()" class="save-btn">+ 3</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-buttons">
+                            <button onclick="saveTS()" class="mastersave-btn">Save Game</button>
+                            <button onclick="newGS()" class="newgame-btn">New Game</button>
+                            
+                        </div>
+                        <div class="past-games">
+                            <p id="past-gamesscore">Past Game Scores: </p>
+                        </div>
+                        
+                    </div>
+                    
+            </div>    
         </div>
         <script src="index.js"></script>
     </body>
